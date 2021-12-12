@@ -1,0 +1,12 @@
+{
+  "name": "task-05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start":"sass --watch style/style.scss:dist/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

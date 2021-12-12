@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: rgba(0, 0, 0, 0.722);
+  color: #efdfdf;
+}
+
+body {
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+.main__content {
+  width: 100%;
+}
+.main__content--heading {
+  font-family: "Kosugi", sans-serif;
+  font-size: 4vw;
+  position: relative;
+}
+.main__content--heading > span::after {
+  content: "aka IRONMAN";
+  font-size: small;
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(100px);
+}
+.main__content--section {
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  overflow: auto;
+}
+.main__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.main__image--hero {
+  border-radius: 7px;
+}
+
+@media (max-width: 1344px) {
+  .main__content--heading > span::after {
+    display: none;
+  }
+}
+@media (max-width: 1070px) {
+  .main {
+    flex-direction: column;
+    height: 100%;
+  }
+  .main__image {
+    height: 300px;
+  }
+  .main__image--hero {
+    border-radius: 50%;
+    border: 10px black solid;
+    height: 100%;
+  }
+}
+@media (max-width: 799px) {
+  .main {
+    margin-top: 50px;
+    position: relative;
+    flex-direction: column-reverse;
+  }
+  .main__image {
+    height: 0%;
+    margin: 0;
+  }
+  .main__image--hero {
+    border-radius: 50%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .main__content {
+    flex-grow: 2;
+  }
+  .main__content--heading {
+    font-size: 3.5vw;
+  }
+  .main__content--section {
+    font-size: 15px;
+  }
+}
+@media (max-width: 599px) {
+  .main__image--hero {
+    left: 85%;
+  }
+  .main__content--heading {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
